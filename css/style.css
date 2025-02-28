@@ -1,0 +1,33 @@
+body {
+    background-color: green;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin-top: 50px;
+}
+.title {
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.activities {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.activity {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
