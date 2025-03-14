@@ -22,10 +22,18 @@
     <div class="clickButton"> 
         <button type="button" class="btn btn-success m-3" onclick="increaseStimClicks()">Click me!</button>
         <p class="counter">Stimulation Clicks: <span id="stimClicksCount">0</span></p>
-        <img id="rewardImage" src="img\dvd-logo-png.png" class="hidden" width="80" height="80" onclick="buyDvD()" title="You need 50 clicks to buy this! Every bounce add one click!">
+        <div class="rewardContainer">
+            <img id="rewardImage" src="img\dvd-logo-png.png" class="hidden" width="80" height="80" onclick="buyDvD()" title="You need 50 clicks to buy this! Every bounce add one click!">
+            <img id="rewardImage2" src="img\klover.png" class="hidden" width="80" height="80" onclick="buyLuckyClick()" title="You need 100 clicks to buy this! 1 in 10 chance to get 10 clicks!">
+            <img id="rewardImage3" src="img\addOne.png" class="hidden" width="80" height="80" onclick="buyAddClick()" title="You need 150 clicks to buy this! Add 1 click per button-click!">
+        </div>
     </div>
 
-    <img id="dvdLogo" src="img\dvd-logo-png.png" alt="DVD Logo">
+
+        <img id="dvdLogo" src="img\dvd-logo-png.png" alt="DVD Logo">
+        <img id="klover" src="img\klover.png" alt="Klover">
+        <img id="addOne" src="img\addOne.png" alt="Add one">
+
 
 
 
