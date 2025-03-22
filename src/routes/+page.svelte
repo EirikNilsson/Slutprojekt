@@ -23,7 +23,6 @@
   
   <style>
 	body {
-	  background-color: green;
 	  text-align: center;
 	  font-family: Arial, sans-serif;
 	}
@@ -45,7 +44,7 @@
 	  margin-top: 50px;
 	}
 	.activity {
-	  width: 100px; /* Ändrat så att de får en fast storlek */
+	  width: 100px; 
 	  height: 100px;
 	  background-color: lightgray;
 	  display: flex;
