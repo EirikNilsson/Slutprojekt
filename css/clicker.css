@@ -1,0 +1,54 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    transition: background-color 1s ease-in-out;
+}
+
+.clickButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rewardContainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#dvdLogo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: no;
+    display: none;
+}
+
+#klover {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: no;
+    display: none;
+}
+
+#addOne {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: no;
+    display: none;
+}
