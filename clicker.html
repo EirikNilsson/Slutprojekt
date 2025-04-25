@@ -13,43 +13,43 @@
     <link rel="stylesheet" href="css/clicker.css">
     <script src="js/clicker.js"></script>
 </head>
-<body>
+<body class="bg-primary">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.min.js" integrity="sha384-Re460s1NeyAhufAM5JwfIGWosokaQ7CH15ti6W5Y4wC/m4eJ5opJ2ivohxVM05Wd" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="draw.html">Draw</a>
-                    <a class="nav-link" href="clicker.html">Clicker</a>
-                    <a class="nav-link" href="blackjack.html">Blackjack</a>
-                    <a class="nav-link" href="bootstrap.html">Bootstrap</a>
-                    <a class="nav-link" href="login.html">Log out</a>
-                </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="draw.html">Draw</a>
+              <a class="nav-link" href="clicker.html">Clicker</a>
+              <a class="nav-link" href="blackjack.html">Blackjack</a>
+              <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+              <a class="nav-link" href="login.html">Log out</a>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     <div class="mainContent">
         <div class="clickButton"> 
-            <button type="button" class="btn btn-success btn-md-danger m-3" onclick="increaseStimClicks()">Click me!</button>
+            <button type="button" class="btn btn-warning btn-md-danger m-3" onclick="increaseStimClicks()">Click me!</button>
             <p class="counter">Stimulation Clicks: <span id="stimClicksCount">0</span></p>
             <div class="rewardContainer">
-                <img id="rewardImage" src="img\dvd-logo-png.png" class="hidden" width="80" height="80" onclick="buyDvD()" title="You need 50 clicks to buy this! Every bounce add one click!">
-                <img id="rewardImage2" src="img\klover.png" class="hidden" width="80" height="80" onclick="buyLuckyClick()" title="You need 100 clicks to buy this! 1 in 10 chance to get 10 clicks!">
-                <img id="rewardImage3" src="img\addOne.png" class="hidden" width="80" height="80" onclick="buyAddClick()" title="You need 150 clicks to buy this! Add 1 click per button-click!">
+                <img id="rewardImage" src="img/dvd-logo-png.png" class="hidden" width="80" height="80" onclick="buyDvD()" title="You need 50 clicks to buy this! Every bounce add one click!">
+                <img id="rewardImage2" src="img/klover.png" class="hidden" width="80" height="80" onclick="buyLuckyClick()" title="You need 100 clicks to buy this! 1 in 10 chance to get 10 clicks!">
+                <img id="rewardImage3" src="img/addOne.png" class="hidden" width="80" height="80" onclick="buyAddClick()" title="You need 150 clicks to buy this! Add 1 click per button-click!">
             </div>
         </div>
     </div>
 
 
-        <img id="dvdLogo" src="img\dvd-logo-png.png" alt="DVD Logo">
-        <img id="klover" src="img\klover.png" alt="Klover">
-        <img id="addOne" src="img\addOne.png" alt="Add one">
+        <img id="dvdLogo" src="img/dvd-logo-png.png" alt="DVD Logo">
+        <img id="klover" src="img/klover.png" alt="Klover">
+        <img id="addOne" src="img/addOne.png" alt="Add one">
 
 
 

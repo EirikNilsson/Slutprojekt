@@ -51,7 +51,7 @@ animation: pulseColors 3s infinite;
 }
 
 .leftBox {
-  background-color: #4a68f9;
+  margin: 20px;
   width: 20vh;
   height: 50vh;
   border-radius: 10px;
@@ -93,7 +93,6 @@ animation: pulseColors 3s infinite;
 }
 
 .rightBox {
-  background-color: #b3c248;
   width: 25vh;
   height: 60vh;
   border-radius: 10px;
@@ -122,7 +121,6 @@ animation: pulseColors 3s infinite;
 }
 
 .bottomBox {
-  background-color: #e94e47;
   width: 100%;
   height: 100px;
   border-radius: 10px;

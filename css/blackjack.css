@@ -2,6 +2,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+nav {
+    text-align: left;
+}
 
 #dealer-cards img {
     height: 175px;
