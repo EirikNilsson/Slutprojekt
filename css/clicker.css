@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
     transition: background-color 1s ease-in-out;
 }
 
@@ -40,3 +39,20 @@ body {
     height: 200px;
     display: none;
 }
+
+@keyframes blinkColors {
+    0% { fill: blue; }
+    25% { fill: orange; }
+    50% { fill: yellow; }
+    75% { fill: green; }
+    100% { fill: blue; }
+  }
+
+  .blink {
+    fill: black;
+    transition: fill 0.3s;
+  }
+
+  svg:hover .blink {
+    animation: blinkColors 2s infinite;
+  }

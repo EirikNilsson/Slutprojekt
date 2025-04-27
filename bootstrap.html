@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Bootstrap</title>
-
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
-  <body class="bg-primary text-light">
+  <body class="bg-info text-dark">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
+          Nav<span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav">
@@ -26,53 +26,58 @@
           </div>
         </div>
       </div>
+      <svg width="50" height="50" viewBox="0 0 365 365" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="365" height="365" rx="80" fill="#D53838"/> 
+        <path class="blink" d="M240.902 243.545V197H257.174C260.417 197 263.091 197.561 265.197 198.682C267.303 199.788 268.871 201.28 269.902 203.159C270.932 205.023 271.447 207.091 271.447 209.364C271.447 211.364 271.091 213.015 270.379 214.318C269.682 215.621 268.758 216.652 267.606 217.409C266.47 218.167 265.235 218.727 263.902 219.091V219.545C265.326 219.636 266.758 220.136 268.197 221.045C269.637 221.955 270.841 223.258 271.811 224.955C272.78 226.652 273.265 228.727 273.265 231.182C273.265 233.515 272.735 235.614 271.674 237.477C270.614 239.341 268.94 240.818 266.652 241.909C264.364 243 261.387 243.545 257.72 243.545H240.902ZM246.538 238.545H257.72C261.402 238.545 264.015 237.833 265.561 236.409C267.121 234.97 267.902 233.227 267.902 231.182C267.902 229.606 267.5 228.152 266.697 226.818C265.894 225.47 264.75 224.394 263.265 223.591C261.78 222.773 260.023 222.364 257.993 222.364H246.538V238.545ZM246.538 217.455H256.993C258.69 217.455 260.22 217.121 261.584 216.455C262.962 215.788 264.053 214.848 264.856 213.636C265.674 212.424 266.084 211 266.084 209.364C266.084 207.318 265.371 205.583 263.947 204.159C262.523 202.72 260.265 202 257.174 202H246.538V217.455Z" fill="black"/>
+        <path class="blink" d="M166.281 243.545H160.372L177.463 197H183.281L200.372 243.545H194.463L180.554 204.364H180.19L166.281 243.545ZM168.463 225.364H192.281V230.364H168.463V225.364Z" fill="black"/>
+        <path class="blink" d="M89.2792 197H95.7337L108.643 218.727H109.188L122.097 197H128.552L111.734 224.364V243.545H106.097V224.364L89.2792 197Z" fill="black"/>
+        <path class="blink" d="M279.965 166.545L267.238 120H272.965L282.692 157.909H283.147L293.056 120H299.42L309.329 157.909H309.783L319.51 120H325.238L312.51 166.545H306.692L296.42 129.455H296.056L285.783 166.545H279.965Z" fill="black"/>
+        <path class="blink" d="M206.594 166.545H192.23V120H207.23C211.746 120 215.609 120.932 218.821 122.795C222.033 124.644 224.496 127.303 226.208 130.773C227.92 134.227 228.776 138.364 228.776 143.182C228.776 148.03 227.912 152.205 226.185 155.705C224.458 159.189 221.943 161.871 218.64 163.75C215.337 165.614 211.321 166.545 206.594 166.545ZM197.867 161.545H206.23C210.079 161.545 213.268 160.803 215.799 159.318C218.329 157.833 220.215 155.72 221.458 152.977C222.7 150.235 223.321 146.97 223.321 143.182C223.321 139.424 222.708 136.189 221.48 133.477C220.253 130.75 218.42 128.659 215.98 127.205C213.541 125.735 210.503 125 206.867 125H197.867V161.545Z" fill="black"/>
+        <path class="blink" d="M115.342 125V120H150.252V125H135.615V166.545H129.979V125H115.342Z" fill="black"/>
+        <path class="blink" d="M41 125V120H75.9091V125H61.2727V166.545H55.6364V125H41Z" fill="black"/>
+      </svg>
     </nav>
-
-  
 
     <div class="toast-container position-fixed top-0 end-0 p-3">
       <div class="toast show align-items-center text-bg-primary border-0" role="alert">
-        <div class="d-flex">
-          <div class="toast-body">Välkommen tillbaka, Eirik!</div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        <div class="d-flex flex-column">
+          <div class="toast-body">Welcome back!</div>
+          <div class="modal-footer justify-content-end">
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="d-flex justify-content-center my-3">
       <div class="spinner-border text-light mx-2"></div>
-      <div class="spinner-grow text-success mx-2" style="width: 3rem; height: 3rem;"></div>
-    </div>
-
-    <div class="card text-dark m-3" style="width: 18rem;">
-      <img src="img/klover.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Korttitel</h5>
-        <p class="card-text">Ett exempel på en Bootstrap-card med bild och knapp.</p>
-        <a href="#" class="btn btn-primary">Gå vidare</a>
-      </div>
+      <div class="spinner-grow text-danger mx-2" style="width: 3rem; height: 3rem;"></div>
     </div>
 
     <button type="button" class="btn btn-warning m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Visa popup
+      Show popup
     </button>
+
     <div class="modal fade" id="exampleModal" tabindex="-1">
-      <div class="modal-dialog"><div class="modal-content bg-dark text-light">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">Meddelande</h1>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Message</h1>
+          </div>
+          <div class="modal-body">
+            This is a Bootstrap Modal!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="modal-body">Det här är en Bootstrap Modal!</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
-        </div>
-      </div></div>
+      </div>
     </div>
 
     <div class="m-3">
-      <label for="customRange1" class="form-label">Din energi-nivå</label>
+      <label for="customRange1" class="form-label">Your energy level</label>
       <input type="range" class="form-range" id="customRange1" min="0" max="100">
-      <div class="progress mt-2" role="progressbar" aria-label="Exempel" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress mt-2" role="progressbar" aria-label="Example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" id="progressBar1" style="width: 50%"></div>
       </div>
     </div>
@@ -81,33 +86,37 @@
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-            Vad är TTDWYAB?
+            What is TTDWYAB?
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show">
           <div class="accordion-body">
-            Det är en samling coola minispel, verktyg och testfunktioner i en enda app.
+            It is a collection of cool mini-games, tools, and test features in one single app.
           </div>
         </div>
       </div>
     </div>
 
-    <button class="btn btn-outline-light m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
-      Sido-meny
+    <button class="btn btn-outline-dark m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+      Side menu
     </button>
+
     <div class="offcanvas offcanvas-start text-bg-dark" data-bs-backdrop="static" id="staticBackdrop">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Inställningar</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        <h5 class="offcanvas-title">Settings</h5>
       </div>
-      <div class="offcanvas-body">
-        <p>Välj tema, spara dina framsteg eller något annat coolt här.</p>
+      <div class="offcanvas-body d-flex flex-column">
+        <p>Choose theme, save your progress, or something else cool here.</p>
+        <div class="modal-footer justify-content-end">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+        </div>
       </div>
     </div>
 
-    <h4 class="m-3">Notiser <span class="badge bg-danger">4</span></h4>
+    <h4 class="m-3">Notifications <span class="badge bg-danger">4</span></h4>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
       const range = document.getElementById('customRange1');
       const progressBar = document.getElementById('progressBar1');
@@ -120,39 +129,42 @@
     </script>
 
     <div class="container">
-        <div class="row">
+      <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-            <img src="img/klover.png" class="card-img-top" alt="klover">
+          <div class="card">
+            <img src="img/klover.AVIF" class="card-img-top" alt="clover">
             <div class="card-body">
-                <h5 class="card-title">Korttitel</h5>
-                <p class="card-text">Card</p>
-                <a href="#" class="btn btn-primary">Gå vidare</a>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Card</p>
+              <a href="#" class="btn btn-primary">Continue</a>
             </div>
-            </div>
+          </div>
         </div>
+
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-            <img src="img/klover.png" class="card-img-top" alt="klover">
+          <div class="card">
+            <img src="img/klover.AVIF" class="card-img-top" alt="clover">
             <div class="card-body">
-                <h5 class="card-title">Korttitel 2</h5>
-                <p class="card-text">Card</p>
-                <a href="#" class="btn btn-primary">Gå vidare</a>
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">Card</p>
+              <a href="#" class="btn btn-primary">Continue</a>
             </div>
-            </div>
+          </div>
         </div>
+
         <div class="col-12 col-lg-4">
-            <div class="card">
-            <img src="img/klover.png" class="card-img-top" alt="klover">
+          <div class="card">
+            <img src="img/klover.AVIF" class="card-img-top" alt="clover">
             <div class="card-body">
-                <h5 class="card-title">Korttitel 3</h5>
-                <p class="card-text">Card</p>
-                <a href="#" class="btn btn-primary">Gå vidare</a>
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">Card</p>
+              <a href="#" class="btn btn-primary">Continue</a>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
+
+      </div>
     </div>
-  
+
   </body>
 </html>

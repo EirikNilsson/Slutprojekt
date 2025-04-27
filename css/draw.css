@@ -12,34 +12,6 @@ nav {
 }
 
 
-.logo-container img {
-position: absolute; 
-left: 5px;
-top: 45px;
-width: 80px;
-height: 80px;
-
-}
-
-.logo-container svg {
-position: absolute; 
-top: 80px; 
-left: 20px;
-width: 50px;
-height: 50px;
-}
-
-.logo-container:hover .logoText {
-animation: pulseColors 3s infinite;
-}
-
-@keyframes pulseColors {
-0% { fill: red; }
-33% { fill: blue; }
-66% { fill: green; }
-100% { fill: red; }
-}
-
 
 
 #wrapper {
@@ -115,6 +87,8 @@ animation: pulseColors 3s infinite;
 
 }
 
+
+
 #chartCanvas {
   width: 100%;    
   height: 100%;
@@ -149,21 +123,22 @@ img {
   .bottomBox {
     height: 200px;
   }
-  .logo-container img {
-    position: absolute; 
-    left: 5px;
-    top: 230px;
-    width: 80px;
-    height: 80px;
-    
-    }
-    
-    .logo-container svg {
-    position: absolute; 
-    top: 265px; 
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    }
 
+}
+
+@keyframes blinkColors {
+  0% { fill: blue; }
+  25% { fill: orange; }
+  50% { fill: yellow; }
+  75% { fill: green; }
+  100% { fill: blue; }
+}
+
+.blink {
+  fill: black;
+  transition: fill 0.3s;
+}
+
+svg:hover .blink {
+  animation: blinkColors 2s infinite;
 }
