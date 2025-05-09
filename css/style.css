@@ -3,8 +3,23 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
 }
+
+:root {
+    --activity-size: 120px; 
+  }
+  
 .container {
     margin-top: 50px;
+}
+
+.activities-wrapper {
+    background-color: #d53838;
+    padding: 50px;
+    padding-bottom: 200px;
+    margin: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 .title {
     background-color: white;
@@ -48,4 +63,17 @@ body {
 
   svg:hover .blink {
     animation: blinkColors 2s infinite;
+  }
+
+
+
+.bar {
+    display: none !important;
+}
+
+
+  @media (max-width: 500px) {
+    .bar {
+      display: block !important;
+    }
   }
