@@ -53,23 +53,53 @@
         <path class="blink" d="M41 125V120H75.9091V125H61.2727V166.545H55.6364V125H41Z" fill="black"/>
       </svg>
     </nav>
+  <div class="smallScreen">
     <div class="bar">
       <button class="btn btn-outline-dark m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
-        Side menu
+        Settings
       </button>
       <div class="offcanvas offcanvas-start text-bg-dark" data-bs-backdrop="static" id="staticBackdrop">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title">Settings</h5>
         </div>
         <div class="offcanvas-body d-flex flex-column">
-          <p>Here are all the thing u can do!!!</p>
-          <div class="modal-footer justify-content-end">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+          <div class="leftBox bg-dark">
+            <a id="save" href="#" class="btn btn-success">Save</a>
+            <a id="undo" href="#" class="btn btn-warning">Undo</a>
+            <a id="reset" href="#" class="btn btn-danger">Reset</a>
           </div>
+          <div>
+            <div class="bottomBox">
+              <div id="drawSize"> 
+                <img id="tiny2" src="img/tiny.png" alt="tiny">
+                <img id="small2" src="img/small.png" alt="small">
+                <img id="large2" src="img/large.png" alt="large">
+                <img id="big2" src="img/big.png" alt="big">
+                <img id="eraser2" src="img/eraser.png" alt="eraser">
+              </div>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="rightBox">
+              <a href="https://unsplash.com/" target="_blank">
+                <img src="img/addImg.png" alt="Add inspo img">
+              </a>
+            </div>
+          </div>
+            <div class="canvas-container">
+              <div class="gray-circle">
+                <canvas id="chartCanvas2"></canvas>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-end">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+            </div>
         </div>
       </div>
     </div>
-    
+    <canvas id="canvas2"></canvas>
+  </div>
+    <div class="bigScreen">
       <div id="wrapper">
 
         <div class="leftBox bg-dark">
@@ -101,7 +131,7 @@
             </div>
           </div>
         </div>
-
+      </div>
     </div>
   </body>
 </html>

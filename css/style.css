@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 :root {
     --activity-size: 120px; 
   }
@@ -12,10 +13,9 @@ body {
     margin-top: 50px;
 }
 
-.activities-wrapper {
+.box {
     background-color: #d53838;
     padding: 50px;
-    padding-bottom: 200px;
     margin: 50px;
     border-radius: 10px;
     display: flex;

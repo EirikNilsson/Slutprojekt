@@ -44,8 +44,29 @@ nav {
   color: white;
 }
 
+#save2 {
+  margin: 20%;
+  margin-top: 20%; 
+} 
+
+#undo2 {
+  margin: 20%;
+}
+
+#reset2 {
+  margin: 20%;
+  color: white;
+}
+
 
 #canvas {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+#canvas2 {
   background-color: #f2f2f2;
   width: 100%;
   height: 80vh;
@@ -105,24 +126,25 @@ img {
   width: 70px;
 }
 
-@media (max-width: 1000px) {
-  #wrapper {
-    display: grid
+.smallScreen {
+  display: none;
+
+}
+
+  .bigScreen {
+    display: block;
   }
-  .leftBox {
-    position: absolute;
-    width: 20vh;
-    top: 790px
+
+@media (max-width: 1000px) {
+  .bigScreen {
+    display: none;
+  }
+
+  .smallScreen {
+  display: block;
 
   }
-  .right-container {
-    position: absolute;
-    top: 790px;
-    left: 155px;
-  }
-  .bottomBox {
-    height: 200px;
-  }
+
 
 }
 
