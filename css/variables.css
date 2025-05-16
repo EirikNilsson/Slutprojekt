@@ -1,0 +1,28 @@
+/* index */
+
+/* blackjack */
+.cardSize img {
+    height: 10%;
+    width: 10%;
+    margin: 1%;
+}
+
+@media (max-width: 1400px) {
+    .cardSize img {
+        height: 20%;
+        width: 20%;
+        margin: 1%;
+    }
+}
+
+/* draw */
+.buttons a {
+    margin: 20%;
+  
+  }
+
+/* clicker */
+
+/* bootsrap */
+
+/* all */

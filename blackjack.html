@@ -10,6 +10,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"
         ></script>
+        <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/blackjack.css">
         <script src="js/blackjack.js"></script>
     </head>
@@ -46,12 +47,12 @@
             </svg>
           </nav>
         <h2>Dealer: <span id="dealer-sum"></span></h2>
-        <div id="dealer-cards">
+        <div id="dealer-cards"  class="cardSize" >
             <img  id="hidden" src="./cards/BACK.png" alt="CardBack">
         </div>
 
         <h2>You: <span id="your-sum"></span></h2>
-        <div id="your-cards"></div>
+        <div id="your-cards"  class="cardSize"></div>
 
         <br>
         <button type="button" class="btn btn-success m-3" id="hit">Hit</button>

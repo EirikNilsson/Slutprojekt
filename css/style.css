@@ -21,6 +21,16 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.box p {
+  background-color: white;
+  padding: 50px;
+  padding-bottom: 20%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .title {
     background-color: white;
     display: inline-block;
