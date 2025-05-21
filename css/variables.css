@@ -1,28 +1,37 @@
-/* index */
 
-/* blackjack */
 .cardSize img {
-    height: 10%;
-    width: 10%;
+    height: 8%;
+    width: 8%;
     margin: 1%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 750px) {
     .cardSize img {
-        height: 20%;
-        width: 20%;
+        height: 15%;
+        width: 15%;
         margin: 1%;
     }
 }
 
-/* draw */
 .buttons a {
     margin: 20%;
   
   }
 
-/* clicker */
+:root {
 
-/* bootsrap */
+  --radius: 10px;
 
-/* all */
+  --padding: 2rem;
+
+  --margin: 20px;
+
+  --font-size: 15px;
+
+  --font-family: Arial, Helvetica, sans-serif;
+
+  --gap: 20px;
+
+
+}
+

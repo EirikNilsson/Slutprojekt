@@ -1,22 +1,14 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
     text-align: center;
 }
-nav {
-    text-align: left;
-}
 
-#hit {
+#hit, #stay {
     width: 100px;
     height: 50px;
-    font-size: 20px;
-}
-
-#stay {
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
 }
 
 @keyframes blinkColors {

@@ -3,59 +3,42 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
 }
-
-
-:root {
-    --activity-size: 120px; 
-  }
   
 .container {
     margin-top: 50px;
 }
 
 .box {
-    background-color: #d53838;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
+  background-color: #d53838;
+  margin: var(--margin);
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
 }
 
 .box p {
   color: white;
-  padding: 50px;
-  padding-bottom: 20%;
-  border-radius: 10px;
+  font-family: var(--font-family);
+  padding: var(--padding);
+  border-radius: var(--radius);
   display: flex;
   justify-content: center;
 }
 
-.title {
-    background-color: white;
-    display: inline-block;
-    padding-left: 30%;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-   
-}
 .activities {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: var(--gap);
     margin-top: 100px;
 }
 .activity {
     width: 100%;
     height: 100%;
-    background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
+    border-radius: var(--radius);
 }
 
 @keyframes blinkColors {
